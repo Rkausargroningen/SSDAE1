@@ -475,7 +475,7 @@ def main():
                     'start': start_node,
                     'end': end_node,
                     'has_pump': has_pump,
-                    'pump_power': pump_power
+                    'pump_const': pump_const
                 }
                 st.session_state.pipes.append(new_pipe)
                 st.success(f"Added {new_pipe['id']} between {start_node} and {end_node}")
