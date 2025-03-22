@@ -397,7 +397,7 @@ def visualize_graph():
         edge_attrs = {}
         if pipe['has_pump']:
             edge_attrs['style'] = 'dashed'
-            edge_attrs['label'] = f"Pump ({pipe['pump_power']}kW)"
+            edge_attrs['label'] = f"Pump ({pipe['pump_const']})"
         G.add_edge(pipe['start'], pipe['end'], **edge_attrs)
 
     # Draw graph
