@@ -464,7 +464,7 @@ def main():
             end_node = st.selectbox("End Node", node_ids)
 
         has_pump = st.checkbox("Contains Pump")
-        pump_power = st.number_input("Pump Power (kW)", min_value=0.0) if has_pump else 0.0
+        pump_const = st.number_input("Pump const", min_value=0.0) if has_pump else 0.0
 
         if st.button("Add Pipe"):
             if start_node == end_node:
